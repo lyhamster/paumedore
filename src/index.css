@@ -1,0 +1,389 @@
+:root {
+  --workColor : #A7F2FF;
+  --pinkMainColor: #FFC5EA;
+  --orangeMainColor: #FD6F57;
+  --greyMainColor: #444444;
+  --pastelYellowColor: #F7FFBC;
+  --bratGreenColor: #CEFF4E;
+  --yellowTimerColor: #FCE132;
+}
+
+@font-face {
+  font-family: "ds-digit";
+  src: url("/src/assets/typos/DS-DIGI.TTF");
+}
+
+.orbitron-regular400 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p, .header {
+  font-family: system-ui;
+}
+
+.header {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.paumeLogo {
+  width: 100px;
+  height: 80px;
+  font-size: 32px;
+  font-family: system-ui;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.block {
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: var(--blockBg);
+}
+
+.blockBorder {
+  box-shadow: 0px 6px 0px 0px black;
+}
+
+.blockNoBorder {
+  box-shadow: 1px 6px 1px 1px black;
+  border: none;
+}
+
+.blockBasic {
+  box-shadow: 
+    inset 0px -4px #00000025, 
+    inset 0px 2px #ffffff25;
+}
+
+.blockNoShadow {
+  box-shadow: 0px 2px 0px 0px black;
+  border: 1px solid black;
+}
+
+.settingBlock {
+  height: 31px;
+  width: 31px;
+  padding: 0px;
+  border-radius: 4px;
+}
+
+.bttn {
+  background-color: var(--bttnBg);
+}
+
+.bttnBasic {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 0px 0px black, inset 0px 2px rgb(255 255 255 / 25%), inset 0px -2px rgb(0 0 0 / 25%);
+  border: 1px solid black;
+}
+
+.bttnCapsule {
+  width: 108px;
+  height: 24px;
+  border-radius: 70px;
+}
+
+.bttnCapsuleOn {
+  box-shadow: 1px 4px 1px 1px black, inset 0px 3px rgba(255, 255, 255, 0.253);
+  border: none;
+  outline: 1px solid black;
+}
+
+.bttnCapsuleOff {
+  box-shadow: inset 0px 3px rgba(0, 0, 0, 0.103);
+  outline: 1.5px solid black;
+  border: none;
+  position: relative;
+  bottom: -10px;
+}
+
+.capsuleDecoration {
+  border-radius: 49px;
+  transform: rotate(45deg);
+  border: unset;
+}
+
+.timerDecoration {
+  display: flex;
+  gap: 16px;
+  position: relative;
+  left: -40px;
+}
+
+.checkboxContainer input { 
+  display: none;
+}
+
+.timerPanel {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
+
+.timerPanelWrapper {
+  width: 100%;
+}
+
+.paumeAction_Section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  padding: 10px;
+}
+
+.todoCheckbox {
+  display: block;
+  width: 23px;
+  height: 23px;
+  box-shadow: 0px 1px 0px 0px black;
+  border-radius: 4pt;
+  border: none;
+  background-color: var(--checkBoxbg);
+}
+
+.toDoPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.toDoListWrapper {
+  max-height: 66vh;
+  height: 100%;
+}
+
+.listSection {
+  max-height: 50vh;
+}
+
+.panelColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.todoInputWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todoInputWrapper input {
+  border: none;
+  outline: none;
+}
+
+.toDoTask {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.todoLabelChecked {
+  text-decoration: line-through;
+}
+
+.settingsBttn {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-family: "ds-digit";
+}
+
+.settingsTimerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counterPanel {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.counterWrapper {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.counterScreen {
+  font-family: "ds-digit";
+  font-size: 64px;
+  color: white;
+}
+
+.counterWrapper p {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: unset;
+}
+
+.TimerBttn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ledLight {
+  width: 10px;
+  height: 10px;
+  border-radius: 70px;
+  box-shadow: 1px 4px 1px 1px black;
+  outline: 1px solid black;
+  background-color: var(--ledColor);
+}
+
+.ledLightOff {
+  width: 10px;
+  height: 10px;
+  border-radius: 70px;
+  box-shadow: 1px 4px 1px 1px black;
+  outline: 1px solid black;
+  background-color: grey;
+}
+
+.timerLabelWrapper {
+  gap: 10px;
+  justify-content: unset;
+}
+
+.timerLabelWrapper p {
+  margin: unset;
+  font-size: 14pt;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.startBttnWrapper {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: relative;
+  left: 25px;
+  bottom: -2px;
+  z-index: 1;
+}
+
+.startSemiRectangle {
+  width: 78px;
+  height: 12px;
+  border-radius: 10px 10px 0px 0px;
+  border: 2px solid black
+}
+
+.startLabel {
+  width: 70px;
+  padding: 4px;
+  text-align: center;
+  font-weight: bold;
+  font-family: monospace;
+  border-top: 0px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.startPaume {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: relative;
+  left: 25px;
+  bottom: -24px;
+  z-index: 1;
+}
+
+span {
+  color: var(--toggleColor);
+}
+
+.timerScreenWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: unset;
+}
+
+.timerScreenWrapper p {
+  font-size: 20px;
+  font-family: "ds-digit";
+  margin: unset;
+  color: var(--toggleColor);
+}
+
+.timerScreenWrapper span {
+  font-size: 100px;
+}
+
+.timerStateWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.timerFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bttnsTimerWrapper {
+  display: flex;
+  width: 100%;
+  gap: 10px
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+}
+
+.paumeWrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100dvh;
+  justify-content: space-between;
+}
+
+.paumeDigital_Section {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.toDoTag {
+  background-color: var(--tagColor);
+  font-family: system-ui;
+  text-transform: uppercase;
+  border-radius: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 10px;
+}
