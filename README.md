@@ -1,9 +1,9 @@
-# PaumeDauré
+# PaumeDoré
 ![paume dore png logo](Logo%20(3).png)
 
 > Turn lost time into golden time.
 
-PaumeDauré is a minimalist **Pomodoro-inspired productivity app** built with **React**, and based on a Figma design.
+PaumeDoré is a minimalist **Pomodoro-inspired productivity app** built with **React**, and based on a Figma design.
 
 It combines a focus timer, todo list, and productivity counters in one focused interface.
 
