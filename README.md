@@ -31,7 +31,7 @@ The name is a wordplay on the French words **“paumé”** (lost) and **“dor�
 ## Getting Started
 
 ```bash
-git clone git@github.com:lyhamster/paumedore.git
+git clone https://github.com/lyhamster/paumedore.git
 cd paumedore
 npm install
 npm run dev
